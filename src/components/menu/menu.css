@@ -1,0 +1,37 @@
+@import "../../styles/variables.css";
+
+.menu__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.menu__title {
+    font-size: 12px;
+    font-weight: 200;
+    color: var(--soft-color);
+    text-transform: uppercase;
+}
+
+.menu__listItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu__listItem:hover {
+    background-color: var(--soft-bg);
+}
+
+@media screen and (max-width: 1024px) {
+    .menu__title {
+        display: none;
+    }
+
+    .menu__listItemTitle {
+        display: none;
+    }
+}
